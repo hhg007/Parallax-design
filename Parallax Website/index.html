@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Save the world</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">World</a>
+        <div class="toogle">
+
+        </div>
+      </header>
+      <img src="images/bg.jpg" alt="" class="bg">
+      <img src="images/bird.png" alt="" class="bird">
+      <div class="content">
+        <h2>We can save The<br> <span>Earth</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a href="#">Join us</a>
+      </div>
+      <ul class="sci">
+        <li> <a href="#"> <img src="images/facebook.png" alt=""> </a> </li>
+        <li> <a href="#"> <img src="images/twitter.png" alt=""> </a> </li>
+        <li> <a href="#"> <img src="images/instagram.png" alt=""> </a> </li>
+      </ul>
+      <div class="textBlocks">
+        <div class="block">
+          <h3>Defenders of Earth</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt .</p>
+        </div>
+        <div class="block">
+          <h3>How to save water</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      document.addEventListener("mousemove",function(e){
+        const bg = document.querySelector('.bg');
+        const bird=document.querySelector('.bird');
+        const content=document.querySelector('.content');
+
+        bg.style.width=100+ e.pageX/100 +'%';
+        bg.style.height=100+ e.pageX/100 +'%';
+
+        bird.style.right=100+ e.pageX /2+'px';
+
+        content.style.left=100+e.pageX/2.5+'px';
+      })
+    </script>
+  </body>
+</html>
